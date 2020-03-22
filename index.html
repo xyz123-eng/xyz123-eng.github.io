@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock</title>
+    <script type="text/javascript">
+        function touchRock() {
+            var userName = prompt("What is your name?", "Enter your name here.");
+            if (userName) {
+                alert("It is good to meet you," + userName + ".");
+                document.getElementById("rocking").src = "../images/石头2.png";
+            }
+        }
+    </script>
+    <style>
+        div {
+            margin-top: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body onload="alert('Hello,I am your pet rock.');">
+    <div></div>
+    <img id="rocking" src="../images/石头1.jpg" alt="iRock" onclick="touchRock();" />
+
+</body>
+
+</html>
